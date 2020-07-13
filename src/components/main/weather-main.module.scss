@@ -1,0 +1,17 @@
+@import '../../scss/vars';
+
+.mainWrapper{
+  background-color: $bg-color;
+  min-height: 100vh;
+}
+
+.innerWrapper{
+  width: 85.416667%;//1640px
+  margin: 0 auto;
+}
+
+.weatherItemsWrapper{
+  display: flex;
+  align-items: center;
+  margin-top: 12.962963vh;//140px
+}

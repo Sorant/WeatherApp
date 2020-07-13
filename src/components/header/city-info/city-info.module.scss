@@ -1,0 +1,19 @@
+@import '../../../scss/vars';
+
+.cityInfo{
+  margin-right: 6.428571rem;//90px
+}
+
+.city{
+  font: $font_xb 2.742857rem/1 $font;//38.4px
+  margin-bottom: 2.222222vh;//24
+}
+
+.cityCountry{
+  margin-left: 0.357143rem;//5px
+}
+
+.date{
+  font: $font_b 1.828571rem/1 $font;//25.6px
+  color: #c4c4cd;
+}

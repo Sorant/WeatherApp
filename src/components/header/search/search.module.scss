@@ -1,0 +1,67 @@
+@import '../../../scss/vars';
+
+.title{
+  font: $font_b 2rem/1 $font;//28px
+  margin: 6.481481vh 0 1.666667vh 1.285714rem;//70px 0 18px 18px
+}
+
+.searchInput{
+  display: block;
+  position: relative;
+  padding-left: 1.071429rem;//15px
+  font: $font_b 1.428571rem/1 $font;//20px
+  height: 40px;
+  background-color: $white-color;
+  border: none;
+  outline: $accent-color;
+  border-radius: 0.214286rem;//3px
+  box-shadow: 3px 1px 19px 1px rgba(96, 97, 157, 0.3);
+  @extend .animation;
+  &::before{
+    content: '';
+      position: absolute;
+      bottom: 0;
+    display: block;
+    width: 20px;
+    height: 1px;
+    background-color: $accent-color;
+  }
+  &::placeholder{
+    color: $placeholder-color;
+  }
+  &:hover,
+  &:focus,
+  &:active{
+    box-shadow: none;
+    &::before{
+      width: 100%;
+    }
+  }
+}
+
+.searchButton{
+  display: block;
+  outline: none!important;
+  cursor: pointer;
+  font: $font_b 1.428571rem/1 $font;//20px
+  padding: 1.028571rem 2.742857rem;//14.4px 38.4px
+  border-radius: 0.357143rem;//5px
+  margin-top: 2.777778vh;//30px
+  color: $accent-color;
+  border: none;
+  box-shadow: 3px 4px 19px 1px rgba(96, 97, 157, 0.7);
+  background: rgba(69, 70, 113, 1);
+  background: -moz-linear-gradient(left, rgba(69, 70, 113, 1) 0%, rgba(95, 69, 113, 1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(69, 70, 113, 1)), color-stop(100%, rgba(95, 69, 113, 1)));
+  background: -webkit-linear-gradient(left, rgba(69, 70, 113, 1) 0%, rgba(95, 69, 113, 1) 100%);
+  background: -o-linear-gradient(left, rgba(69, 70, 113, 1) 0%, rgba(95, 69, 113, 1) 100%);
+  background: -ms-linear-gradient(left, rgba(69, 70, 113, 1) 0%, rgba(95, 69, 113, 1) 100%);
+  background: linear-gradient(to right, rgba(69, 70, 113, 1) 0%, rgba(95, 69, 113, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#454671', endColorstr='#5f4571', GradientType=1);
+  @extend .animation;
+  &:hover,
+  &:focus,
+  &:active{
+    box-shadow: none;
+  }
+}

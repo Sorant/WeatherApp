@@ -1,0 +1,27 @@
+@import '../../scss/vars';
+
+.greetingPage{
+  width: 100%;
+  min-height: 100vh;
+  color: $white-color;
+  background: url(../../img/bg-img.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.wrapper{
+  width: 88.888889%;
+  margin: 0 auto;
+}
+
+.title{
+  padding-top: 21.296296vh;//230px
+}
+
+.title__upperText{
+  font: $font_b 6.285714rem/1 $font;//88px
+}
+
+.title__lowerTxt{
+  font: $font_xb 12.142857rem/1 $font;//170px
+  text-transform: uppercase;
+}
